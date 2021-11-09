@@ -10,24 +10,15 @@ public class ArrayBackedListADT implements ListADT {
         this.length = 0;
     }
 
+
     @Override
     public void append(Integer x) {
-
-        myIntegers[length] = x;
-        length++;
+        throw new UnsupportedOperationException("not implemented yet!");
     }
 
     @Override
     public void prepend(Integer x) {
-
-        if (length > 0) {
-            for (int i = length + 1; i > 0; i--) {
-                myIntegers[i] = myIntegers[i - 1];
-            }
-        }
-
-        myIntegers[0] = x;
-        length++;
+        throw new UnsupportedOperationException("not implemented yet!");
     }
 
     @Override
@@ -37,19 +28,7 @@ public class ArrayBackedListADT implements ListADT {
 
     @Override
     public boolean remove(Integer x) {
-
-        boolean didRemoveSomething = false;
-        for (int i = 0; i < length; i++) {
-            if (myIntegers[i].equals(x)) {
-                for (int j = i; j < length; j++) {
-                    myIntegers[j] = myIntegers[j+1];
-                }
-                didRemoveSomething = true;
-                length--;
-            }
-        }
-
-        return didRemoveSomething;
+        throw new UnsupportedOperationException("not implemented yet!");
     }
 
     @Override
