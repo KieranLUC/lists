@@ -13,7 +13,9 @@ public class ArrayBackedListADT implements ListADT {
 
     @Override
     public void append(Integer x) {
-        throw new UnsupportedOperationException("not implemented yet!");
+       this.myIntegers[this.length] = x;
+       this.length++;
+
     }
 
     @Override
