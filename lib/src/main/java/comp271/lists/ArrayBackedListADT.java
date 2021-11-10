@@ -20,7 +20,13 @@ public class ArrayBackedListADT implements ListADT {
 
     @Override
     public void prepend(Integer x) {
-        throw new UnsupportedOperationException("not implemented yet!");
+       Integer[] temp = new Integer[myIntegers.length + 1];
+       temp[0] = x;
+       for (int i = 1; i < temp.length; i++){
+           temp[i] = myIntegers[i - 1];
+       }
+       this.myIntegers = temp;
+       this.length++;
     }
 
     @Override
