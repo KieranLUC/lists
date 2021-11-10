@@ -24,4 +24,22 @@ public class SinglyLinkedListTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void prependsToStartOfList() {
+
+        // given
+        ListADT arrayBackedList = new SinglyLinkedListADT();
+
+        // when
+        arrayBackedList.prepend(5);
+        arrayBackedList.prepend(6);
+        arrayBackedList.prepend(7);
+
+        // then
+        String expected = "[7, 6, 5]";
+        String actual = arrayBackedList.toString();
+
+        assertEquals(expected, actual);
+    }
+
 }
