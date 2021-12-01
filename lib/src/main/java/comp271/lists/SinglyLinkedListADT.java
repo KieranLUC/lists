@@ -10,17 +10,10 @@ public class SinglyLinkedListADT implements ListADT {
         this.tail = null;
     }
 
+
     @Override
     public void append(Integer x) {
-        Node newNode = new Node(x);
-        if (this.head == null) {
-            this.head = newNode;
-            this.tail = newNode;
-            this.head.setNext(this.tail);
-        } else {
-            this.tail.setNext(newNode);
-            this.tail = newNode;
-        }
+        throw new UnsupportedOperationException("not implemented yet!");
     }
 
     @Override

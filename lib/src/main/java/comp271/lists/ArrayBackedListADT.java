@@ -13,14 +13,28 @@ public class ArrayBackedListADT implements ListADT {
 
     @Override
     public void append(Integer x) {
+<<<<<<< .merge_file_YxWODh
        this.myIntegers[this.length] = x;
        this.length++;
 
+=======
+        throw new UnsupportedOperationException("not implemented yet!");
+>>>>>>> .merge_file_wgp6K3
     }
 
     @Override
     public void prepend(Integer x) {
+<<<<<<< .merge_file_YxWODh
+       Integer[] temp = new Integer[myIntegers.length + 1];
+       temp[0] = x;
+       for (int i = 1; i < temp.length; i++){
+           temp[i] = myIntegers[i - 1];
+       }
+       this.myIntegers = temp;
+       this.length++;
+=======
         throw new UnsupportedOperationException("not implemented yet!");
+>>>>>>> .merge_file_wgp6K3
     }
 
     @Override
