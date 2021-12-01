@@ -2,6 +2,7 @@ package comp271.lists;
 
 public class Node {
 
+    public Node next;
     private Integer value;
     private Node next;
 

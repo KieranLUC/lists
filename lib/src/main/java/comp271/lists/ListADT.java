@@ -9,4 +9,7 @@ public interface ListADT {
     void sort();
     boolean isEmpty();
     int length();
+    void push(Integer x);
+    void insertBefore(Integer w, Integer x);
+    void traversal();
 }

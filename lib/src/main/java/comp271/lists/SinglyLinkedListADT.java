@@ -5,7 +5,7 @@ public class SinglyLinkedListADT implements ListADT {
     Node head;
     Node tail;
 
-    public SinglyLinkedListADT() {
+    public int SinglyLinkedListADT() {
         this.head = null;
         this.tail = null;
     }
@@ -54,8 +54,14 @@ public class SinglyLinkedListADT implements ListADT {
     }
 
     @Override
-    public int length() {
-        throw new UnsupportedOperationException("not implemented yet!");
+    public int length(){
+        Node temp = head;
+        int length = 0;
+        while (temp != null){
+            length++;
+            temp = temp.next;
+        }
+        return length;
     }
 
     @Override
